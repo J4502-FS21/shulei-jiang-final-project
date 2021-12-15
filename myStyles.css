@@ -5,33 +5,14 @@ body{
   padding: 0;
 
 }
-
-nav {
-  /*background: white;
-  border: 1px solid;
-  border-color: white;*/
-}
-
 li {
     margin: 2px;
-    padding: 6.5px;
+    padding: 2.5px;
+    text-align: left;
   }
 
-/* {
-  margin:auto;
-  display:block;
-  width:400px;
-}*/
 
-ul {
-  list-style-type: none;
-}
 
-/*li {
-  margin: 2px;
-  padding: 40px;
-  border: 1px dotted yellow;
-}*/
 
 a {
   text-decoration: none;
@@ -49,34 +30,12 @@ a:hover {
 
 
 h1 {
-  color:#023047;
+  color:black;
   font-family: 'Crimson Pro';
   text-transform: uppercase;
   font-weight: 900;
-  background: white;
-  border: 10px solid;
-  border-color: white;
-  margin: 0;
-  padding: 0;
 }
 
-h2 {
-  color:#023047;
-  font-style: normal;
-  font-family: 'Crimson Pro', cursive;
-  font-weight: 400;
-}
-
-p,h3 {
-  color: Black;
-  font-family: 'Crimson Pro', cursive;
-  font-weight: 900;
-
-}
-
-h4 {
-  color:Black;
-}
 
 img {
   width:85%;
@@ -85,4 +44,84 @@ img {
   border: 0;
 
 
+}
+#menu_trigger {
+  display: none;
+}
+
+
+@media (max-width:600px){
+  ul {
+    list-style-type: none;
+    justify-content: center;
+
+  }
+  li {
+    margin: 2px;
+    padding: 2.5px;
+  }
+  #menu_trigger {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  #menu_nav {
+    display: none;
+  }
+}
+div {
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  padding: 30px;
+
+}
+
+ul.a {
+  list-style-position: outside;
+  list-style-type:disc;
+}
+ul.b {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+
+}
+
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: flex;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
